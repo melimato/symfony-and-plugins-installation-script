@@ -5,7 +5,9 @@ BASE_DIR=$(echo $(dirname $(readlink -f $0)))
 source $BASE_DIR/helpers.sh
 source $BASE_DIR/params.sh
 
-if [[ -z $CONFIG_FILE ]] || ! [[ -f $CONFIG_FILE ]]; then usage; fi
+if [[ -z $CONFIG_FILE ]] || ! [[ -f $CONFIG_FILE ]]; then
+    usage
+fi
 
 source $CONFIG_FILE
 

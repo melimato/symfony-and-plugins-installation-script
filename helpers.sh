@@ -19,6 +19,7 @@ OPTIONS:
                             * sfDoctrineGuardExtraPlugin : Add forgot password and register functionality to sfGuard
                             * sfAdminDashPlugin : Adds Joomla! style admin dashboard interface
                             * csDoctrineActAsSortablePlugin : Adds Sortable behaviour
+                            * csDoctrineActAsAttachablePlugin : Adds Attachable behaviour
                             * sfDoctrineActAsTaggablePlugin : Adds tag behaviour
                             * csDoctrineActAsCategorizablePlugin : Permits to assign nested categories do doctrine models
                             * sfDoctrineActAsRattablePlugin : This plugin permits to attach rates to Doctrine objects

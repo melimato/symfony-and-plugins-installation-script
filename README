@@ -1,6 +1,6 @@
 # Symfony and Plugins Installation Script  (for symfony 1.2) #
 
-The `Symfony and Plugins Installation Script` is a bash script to ease the creation of new 
+The `Symfony and Plugins Installation Script` is a bash script to ease the creation of new
 projects and the installation of plugins.
 
 It always installs Symfony with Doctrine Plugin and removes Propel. All other plugins are optional.
@@ -11,13 +11,12 @@ Some plugins require other packages to be installed and the script will install 
 ## USAGE ##
 
 1. Change (cd) to the directory you want to start your new project
-Ex: 
-		$ cd /tmp; 
-		$ mkdir my_new_project
-		$ cd my_new_project
+Ex:
+    $ mkdir my_new_project
+    $ cd !$
 
 2. Execute new_project.sh from that directory with the required parameters
-		$ /path/to/new_project.sh
+    $ /path/to/new_project.sh
 
 This will result in the following message:
 
@@ -26,38 +25,38 @@ usage: /path/to/new_project.sh OPTION...
 This script attempts to install Symfony according to pre-configured settings and with sfDoctrinePlugin.
 
 OPTIONS:
-   -h, --help           Show this message
-	 -c, --config-file    Specify config file to use
-	 -l, --language       Specify optional language support (Using MySQL i18n)
-	 -i, --install-plugin Specify optional plugins to install. Currently supported plugins are:
-						                * sfDoctrineGuardPlugin : sfGuard for doctrine...
-														* sfDoctrineGuardExtraPlugin : Add forgot password and register functionality to sfGuard
-														* sfAdminDashPlugin : Adds Joomla! style admin dashboard interface
-														* csDoctrineActAsSortablePlugin : Adds Sortable behaviour
-														* sfDoctrineActAsTaggablePlugin : Adds tag behaviour
-														* csDoctrineActAsCategorizablePlugin : Permits to assign nested categories do doctrine models
-														* sfDoctrineActAsRattablePlugin : This plugin permits to attach rates to Doctrine objects
-														* sfEventCalendarPlugin : Wrapper around data_calc pear class to manage event calendars
-														* sfJqueryReloadedPlugin : Adds easy jquery
-														* pkContextCMSPlugin : Fully working CMS with in place editing
-														* pkToolkitPlugin : is a collection of useful classes implementing common routines and algorithms we otherwise find ourselves reinventing in nearly every application.
-														* pkPersistentFileUploadPlugin : File uploads that persist automatically through multiple validation passes.
-														* pkImageConverterPlugin : Easy, efficient image conversion using the netpbm utilities.
-														* sfLanguageSwitchPlugin: A component to include a simple language switcher.
-														* [Under Development] csSEOToolkitPlugin : Provides several tools to optimize websites for search engines
-														* [Under Development] sfLinkCrossAppPlugin : Resolve link cross application in Symfony
-														* [Under Development] SomeMinifyPlugin :
-														* [Under Development] sfDoctrineApplyPlugin :
+    -h, --help           Show this message
+    -c, --config-file    Specify config file to use
+    -l, --language       Specify optional language support (Using MySQL i18n)
+    -i, --install-plugin Specify optional plugins to install. Currently supported plugins are:
+        * sfDoctrineGuardPlugin : sfGuard for doctrine...
+        * sfDoctrineGuardExtraPlugin : Add forgot password and register functionality to sfGuard
+        * sfAdminDashPlugin : Adds Joomla! style admin dashboard interface
+        * csDoctrineActAsSortablePlugin : Adds Sortable behaviour
+        * sfDoctrineActAsTaggablePlugin : Adds tag behaviour
+        * csDoctrineActAsCategorizablePlugin : Permits to assign nested categories do doctrine models
+        * sfDoctrineActAsRattablePlugin : This plugin permits to attach rates to Doctrine objects
+        * sfEventCalendarPlugin : Wrapper around data_calc pear class to manage event calendars
+        * sfJqueryReloadedPlugin : Adds easy jquery
+        * pkContextCMSPlugin : Fully working CMS with in place editing
+        * pkToolkitPlugin : is a collection of useful classes implementing common routines and algorithms we otherwise find ourselves reinventing in nearly every application.
+        * pkPersistentFileUploadPlugin : File uploads that persist automatically through multiple validation passes.
+        * pkImageConverterPlugin : Easy, efficient image conversion using the netpbm utilities.
+        * sfLanguageSwitchPlugin: A component to include a simple language switcher.
+        * [Under Development] csSEOToolkitPlugin : Provides several tools to optimize websites for search engines
+        * [Under Development] sfLinkCrossAppPlugin : Resolve link cross application in Symfony
+        * [Under Development] SomeMinifyPlugin :
+        * [Under Development] sfDoctrineApplyPlugin :
 
 3. Edit new_project.config file to ajust your needs
 4. Execute the script passing it the config file
-		$ /path/to/new_project.sh -c /path/to/new_project.config
+    $ /path/to/new_project.sh -c /path/to/new_project.config
 
 For every plugin you want to install use the -i or --install-plugin.
 Ex:
-		$ /path/to/new_project.sh -c /path/to/new_project.config -i sfAdminDashPlugin -i csDoctrineActAsSortablePlugin -i sfDoctrineActAsTaggablePlugin -i csDoctrineActAsCategorizablePlugin -i pkContextCMSPlugin -l es -l fr
+    $ /path/to/new_project.sh -c /path/to/new_project.config -i sfAdminDashPlugin -i csDoctrineActAsSortablePlugin -i sfDoctrineActAsTaggablePlugin -i csDoctrineActAsCategorizablePlugin -i pkContextCMSPlugin -l es -l fr
 
-The line ebove will create a new symfony project with the following plugins:
+The line above will create a new symfony project with the following plugins:
  * sfAdminDashPlugin
  * csDoctrineActAsSortablePlugin
  * sfDoctrineActAsTaggablePlugin
@@ -71,7 +70,9 @@ The other script, install_plugin is still in its very early stages and need a bi
 
 ### Requirements ###
 
-* Symfony 1.2
-* Ubuntu with sudo
+* Debian/Ubuntu with sudo
+* PHP 5.2.*
 * Apache
 * MySQL
+* Symfony 1.2
+

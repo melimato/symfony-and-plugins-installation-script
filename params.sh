@@ -21,6 +21,7 @@ while true ; do
                 sfDoctrineGuardExtraPlugin) PLUGINS_TO_INSTALL="$PLUGINS_TO_INSTALL sfDoctrineGuardExtraPlugin"; shift 2 ;;
                 sfAdminDashPlugin) PLUGINS_TO_INSTALL="$PLUGINS_TO_INSTALL sfAdminDashPlugin"; shift 2 ;;
                 csDoctrineActAsSortablePlugin) PLUGINS_TO_INSTALL="$PLUGINS_TO_INSTALL csDoctrineActAsSortablePlugin"; shift 2 ;;
+                csDoctrineActAsAttachablePlugin) PLUGINS_TO_INSTALL="$PLUGINS_TO_INSTALL csDoctrineActAsAttachablePlugin"; shift 2 ;;
                 sfDoctrineActAsTaggablePlugin) PLUGINS_TO_INSTALL="$PLUGINS_TO_INSTALL sfDoctrineActAsTaggablePlugin"; shift 2 ;;
                 csDoctrineActAsCategorizablePlugin) PLUGINS_TO_INSTALL="$PLUGINS_TO_INSTALL csDoctrineActAsCategorizablePlugin"; shift 2 ;;
                 sfDoctrineActAsRattablePlugin) PLUGINS_TO_INSTALL="$PLUGINS_TO_INSTALL sfDoctrineActAsRattablePlugin"; shift 2 ;;
